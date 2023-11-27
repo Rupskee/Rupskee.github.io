@@ -4,7 +4,7 @@ var deadliftmax;
 var rowmax;
 var exercisemap;
 
-const order = ["chest", "rest", "legs", "shoulders", "back", "arms", "rest"];
+const order = ["chest", "rest", "leg", "shoulder", "back", "arm", "rest"];
 const exercise = [
   "bench",
   "rest",
@@ -20,7 +20,7 @@ const reps = [10, 8, 5, 3, 1];
 function getDag(dag, week) {
   dag -= 1;
   week -= 1;
-  if (order[dag] == "legs") {
+  if (order[dag] == "leg") {
     return [
       order[dag],
       "squat",
@@ -53,33 +53,33 @@ function update() {
 }
 
 function toString(dag) {
-  if (dag[0] != "legs" && dag[0] != "rest") {
+  if (dag[0] != "leg" && dag[0] != "rest") {
     return (
-      "muscle group: " +
       dag[0] +
-      " // PL ex: " +
+      " day // " +
       dag[1] +
-      ", weight: " +
+      ": <span>" +
       dag[2] +
-      ", reps: " +
-      dag[3]
-    );
-  } else if (dag[0] == "legs") {
-    return (
-      "muscle group: " +
-      dag[0] +
-      " // PL ex1: " +
-      dag[1] +
-      ", weight: " +
-      dag[2] +
-      ", reps: " +
+      "</span> x <span>" +
       dag[3] +
-      " // PL ex2: " +
+      "</span>"
+    );
+  } else if (dag[0] == "leg") {
+    return (
+      dag[0] +
+      " day // " +
+      dag[1] +
+      ": <span>" +
+      dag[2] +
+      "</span> x <span>" +
+      dag[3] +
+      "</span> // " +
       dag[4] +
-      ", weight: " +
+      ": <span>" +
       dag[5] +
-      ", reps: " +
-      dag[6]
+      "</span> x <span>" +
+      dag[6] +
+      "</span>"
     );
   } else {
     return "REST";

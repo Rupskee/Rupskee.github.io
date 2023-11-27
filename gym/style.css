@@ -54,3 +54,12 @@ body {
 .exercises {
   text-align: center;
 }
+
+.exercises span {
+  color: red;
+  font-weight: bold;
+}
+
+.exercises p {
+  margin: 25px;
+}
