@@ -1,0 +1,27 @@
+.inputs {
+  border: 1px solid black;
+  padding: 15px;
+  display: inline-block;
+}
+
+.inputs h1 {
+  text-align: center;
+}
+
+.inputdiv {
+  margin-bottom: 15px;
+}
+
+.inputdiv label {
+  text-align: right;
+  width: 30%;
+}
+
+.inputdiv input {
+  width: 65%;
+  float: right;
+}
+
+.inputs button {
+  width: 100%;
+}
