@@ -1,3 +1,3 @@
 function selectGymPage() {
-  window.location.href = "gym/html/lifts.html";
+  window.location.href = "gym/lifts.html";
 }
