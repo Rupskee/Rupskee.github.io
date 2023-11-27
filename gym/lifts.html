@@ -27,7 +27,25 @@
         <label for="rows">rows: </label>
         <input type="number" name="rows" id="rows" />
       </div>
-      <button onclick="">refresh</button>
+      <button onclick="update()">update</button>
+    </div>
+    <div class="split">
+      <div class="buttons">
+        <button onclick="setWeek(1)">week 1 - high reps</button>
+        <button onclick="setWeek(2)">week 2 - medium reps</button>
+        <button onclick="setWeek(3)">week 3 - medium low reps</button>
+        <button onclick="setWeek(4)">week 4 - low reps</button>
+        <button onclick="setWeek(5)">week 5 - test week (optional)</button>
+      </div>
+      <div class="exercises">
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <p id="d3"></p>
+        <p id="d4"></p>
+        <p id="d5"></p>
+        <p id="d6"></p>
+        <p id="d7"></p>
+      </div>
     </div>
   </body>
 </html>
